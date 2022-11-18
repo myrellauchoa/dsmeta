@@ -24,7 +24,6 @@ public class SaleService {
 		LocalDate max = maxDate.equals("") ? today : LocalDate.parse(maxDate);
 
 		return repository.findSales(min, max, pageable);
-		
 
 	}
 
